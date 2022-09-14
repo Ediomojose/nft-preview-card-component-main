@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main{
+    margin: auto;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1rem;
+    width: 22%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 12px 7px 20px 6px rgb(57 75 / 8%);
+}
+
+.container{
+    position: relative;
+    cursor: pointer;
+}
+
+.equilibrium{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    align-content: center;
+}
+
+
+article h1{
+    font-size: 1.5em;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
+
+article h1:hover{
+    color: #00FFF8;
+}
+
+article p{
+    color: hsl(215, 51%, 70%);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+aside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    padding-bottom: 0.8em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.eth-price{
+    font-weight: bold;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.eth-price p{
+    color: #00FFF8;
+}
+
+.days-left{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.days-left p {
+    color: hsl(215, 51%, 70%);
+}
+
+hr{
+    background-color: hsl(215, 32%, 27%);
+}
+
+
+.avatar-box{
+    display: flex;
+    gap: 1rem;
+    padding: 0.9rem;
+}
+
+.avatar{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 10%;
+    align-items: center;
+}
+
+.creator{
+    font-size: 0.9em;
+    color: hsl(215, 51%, 70%);
+}
+
+.name{
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.name:hover{
+    color: #00FFF8;
+}
+
+@media (max-width:480px){
+    body{
+        margin: 20px;
+    }
+    main{
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+}
